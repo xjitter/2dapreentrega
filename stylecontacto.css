@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    )
+    ,url("https://cdn.wallpapersafari.com/43/83/PXtuOZ.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+    background-color: orangered;
+    border: 3px rgb(131, 35, 0) solid;
+    width: 100%;
+    height: 60px;
+}
+
+.nav_icon {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 53px;
+    margin-left: 10px;
+}
+
+.nav img {
+    margin-top: 5px;
+}
+
+.nav_name {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    color: rgb(107, 2, 2);
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.nav_login {
+    float: right;
+    margin-top: 0;
+    margin-right: 0%;
+    height: 57px;
+    width: 150px;
+    color: black;
+    background-color: rgb(190, 51, 1);
+    border: rgb(131, 35, 0) 2px solid;
+    border-right: 0px rgb(131, 35, 0) solid;
+    transition: 0.7s;
+}
+
+.nav_login:hover{
+    background-color: rgb(247, 96, 41);
+}
+
+.nav_register {
+    float: right;
+    margin-top: 0;
+    margin-right: 0%;
+    height: 57px;
+    width: 150px;
+    color: black;
+    background-color: rgb(190, 51, 1);
+    border: rgb(131, 35, 0) 2px solid;
+    border-left: 3px rgb(131, 35, 0) solid;
+    border-right: 2px rgb(131, 35, 0) solid;
+    transition: 0.7s;
+}
+
+.nav_register:hover {
+    background-color: rgb(247, 96, 41);
+}
+
+.nav_register div {
+    padding-top: 20px;
+    padding-left: 35px;
+}
+
+.nav_login div {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+h1 {
+    position: absolute;
+    margin-left: 1220px;
+    margin-top: 200px;
+}
+
+h3 {
+    position: absolute;
+    margin-left: 1090px;
+    margin-top: 500px;
+}
+
+.consulta {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+form {
+    z-index:20;
+    color: rgb(66, 0, 0);
+}
+
+#consulta_text {
+    resize: none;
+    margin-top: 250px;
+    width: 500px;
+    height: 150px;
+}
+
+#consulta_enviar {
+    cursor: pointer;
+    margin-left: 220px;
+    color: white;
+    background-color: black;
+}

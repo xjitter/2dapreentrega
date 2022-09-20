@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+    width: 100%;
+    height: 100%;
+}
+/*Nav desktop*/
+.nav {
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+    background-color: orangered;
+    border: 3px rgb(131, 35, 0) solid;
+    width: 100%;
+    height: 60px;
+}
+
+.nav_icon {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 53px;
+    margin-left: 10px;
+}
+
+.nav img {
+    margin-top: 5px;
+}
+
+.nav_name {
+    display: inline-block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    color: rgb(107, 2, 2);
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.nav_login {
+    float: right;
+    margin-top: 0;
+    margin-right: 0%;
+    height: 57px;
+    width: 150px;
+    color: black;
+    background-color: rgb(190, 51, 1);
+    border: rgb(131, 35, 0) 2px solid;
+    border-right: 0px rgb(131, 35, 0) solid;
+    transition: 0.7s;
+}
+
+.nav_login:hover{
+    background-color: rgb(247, 96, 41);
+}
+
+.nav_register {
+    float: right;
+    margin-top: 0;
+    margin-right: 0%;
+    height: 57px;
+    width: 150px;
+    color: black;
+    background-color: rgb(190, 51, 1);
+    border: rgb(131, 35, 0) 2px solid;
+    border-left: 3px rgb(131, 35, 0) solid;
+    border-right: 2px rgb(131, 35, 0) solid;
+    transition: 0.7s;
+}
+
+.nav_register:hover {
+    background-color: rgb(247, 96, 41);
+}
+
+.nav_register div {
+    padding-top: 20px;
+    padding-left: 35px;
+}
+
+.nav_login div {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+/*Nav Responsive*/
+
+@media (max-width: 720px) {
+    .nav {
+        height: 40px;
+    }
+    .nav_icon {
+        width: 25px;
+        height: 35px;
+    }
+    .nav img {
+        margin-top: 5px;
+    }
+    .nav_name {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .nav_login {
+        margin-left: 19px;
+        border-right: 2px solid rgb(131, 35, 0);
+        border-left: 3px solid   rgb(131, 35, 0);
+        width: 100px;
+        height: 17px;
+    }
+    .nav_register {
+        margin-top: -8px;
+        margin-left: 19px;
+        width: 100px;
+        height: 17px;
+    }
+    .nav_login div {
+        font-size: 13px;
+        padding-top: 1px;
+        padding-left: 15px;
+    }
+    .nav_register div {
+        font-size: 13px;
+        padding-top: 1px;
+        padding-left: 20px;
+    }
+}
+
+
+/*Info desktop*/
+.info {
+    margin-top: 2px;
+}
+
+.info_imagen {
+    display: inline;
+    width: 650px;
+    height: 500px;
+    transition: 0.7s;
+    box-shadow: 1px black solid; opacity: 0.6;
+}
+
+.info_imagen:hover{
+    opacity: 1;
+}
+
+.info_background {
+    background-color: rgb(0, 0, 0);
+    width: 930px;
+    height: 500px;
+    margin-top: -504px;
+    margin-left: 650px;
+}
+
+.info_background h2 {
+    position: absolute;
+    margin-top: 80px;
+    color: blueviolet;
+    padding-left: 19.5%;
+}
+
+.info_caracteristicas {
+    display: inline-block;
+    margin-top: 150px;
+    color: rgb(255, 184, 77);
+    padding-left: 20px;
+}
+
+.info_caracteristicas li {
+    font-size: 15px;
+    height: 30px;
+}
+
+.info_caracteristicas2 {
+    display: inline-block;
+    position: absolute;
+    color: rgb(255, 184, 77);
+    padding-left: 65px;
+    margin-top: 150px;
+}
+
+.info_caracteristicas2 li {
+    font-size: 15px;
+    height: 30px;
+}
+
+.info_gifbg {
+    width: 933px;
+    height: 175px;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+}
+
+.info_gifbg img{
+    width: 170px; 
+    height: 175px; 
+    float: right;
+    opacity: 0;
+    transition: 3s;
+}
+
+.info_gifbg img:hover {
+    opacity: 1;
+}
+
+/*Info Responsive*/
+
+@media (max-width:720px) {
+    .info_imagen {
+        width: 300px;
+        height: 300px;
+    }
+
+    .info_background {
+        background-color: black;
+        width: 100%;
+        height: 300px;
+    }
+}
+
+.mangas_title {
+    margin-top: 20px;
+    margin-left: 640px;
+    font-family: 'Silkscreen', cursive;
+    color: orange;
+    transition: 0.2s;
+}
+
+.mangas_mangasdisponibles1 {
+    margin-top: 20px;
+    width: 1583px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.mangas_mangasdisponibles1 img {
+    width: 250px;
+    height: 200px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.mangas_mangasdisponibles1 img:hover {
+    opacity: 1;
+}
+
+.mangas_mangasdisponibles1 label  {
+    color: white;
+    position: absolute;
+}
+
+.mangas_mangasdisponibles2 {
+    margin-top: 0;
+    width: 1583px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.mangas_mangasdisponibles2 img {
+    width: 250px;
+    height: 200px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.mangas_mangasdisponibles2 img:hover {
+    opacity: 1;
+}
+
+.mangas_mangasdisponibles2 label  {
+    color: white;
+    position: absolute;
+}
+
+#kimetsuname {
+    margin-top: 210px;
+    margin-left: 35px;
+}
+
+#spyfamilyname {
+    margin-top: 210px;
+    margin-left: 52px;
+}
+
+#chainsawname {
+    margin-top: 210px;
+    margin-left: 45px;
+}
+
+#haikyuname {
+    margin-top: 210px;
+    margin-left: 62px;
+}
+
+#deathnotename {
+    margin-top: 210px;
+    margin-left: 57px;
+}
+
+#dragonballsupername {
+    margin-top: 210px;
+    margin-left: 35px;
+}
+
+.mangas_mangasdisponibles3 {
+    margin-top: 0;
+    width: 1583px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.mangas_mangasdisponibles3 img {
+    width: 250px;
+    height: 200px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.mangas_mangasdisponibles3 img:hover {
+    opacity: 1;
+}
+
+.mangas_mangasdisponibles3 label  {
+    color: white;
+    position: absolute;
+}
+
+#hunterxhuntername {
+    margin-top: 210px;
+    margin-left: 40px;
+}
+
+#onepiecename {
+    margin-top: 210px;
+    margin-left: 62px;
+}
+#quintillizasname {
+    margin-top: 210px;
+    margin-left: 15px;
+}
+
+footer {
+    height: 50px;
+    background-color: orangered;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+}
+
+.discordicono {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.discordfooter {
+    display: inline-block;
+    padding-left: 60px;
+    padding-top: 15px;
+}
+
+#discordname {
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.contactanosicono {
+    margin-left: 100px;
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.contactfooter {
+    display: inline-block;
+    padding-left: 165px;
+    padding-top: 15px;
+}
+
+#contactanosname {
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+    font-size: 18px;
+}

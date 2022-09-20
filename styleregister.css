@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+}
+.encabezadoregister{
+    width: 100%;
+    height: 200px;
+}
+
+.encabezadoregister_imagen {
+    width: 100%;
+    height: 200px;
+    opacity: 0.5;
+    box-shadow: 0px 5px 3px rgba(0,0,0,.5);
+}
+
+.register {  
+    display: flex;
+    justify-content: center;
+    margin-top: 130;
+    width: 100%px;
+    height: 615px;
+}
+
+.register_background {
+    border-radius: 15px;
+    border: 5px solid rgb(109, 1, 1);
+    background-color:  orangered;
+    width: 800px;
+    height: 400px;
+}
+
+.register_formulario {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 160px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.register_formulario2 {
+    display: flex;
+    padding-top: 50px;
+    padding-left: 22px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.register_formulario2 input{
+    box-shadow: 0px 2px 0px black;
+    border-radius: 5px;
+    height: 30px;
+    border: 2px gray solid;
+    margin-bottom: 10px;
+}
+
+.register_background h2 {
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 202px;
+}
+
+.register_formulario input{
+    box-shadow: 0px 2px 0px black;
+    border-radius: 5px;
+    height: 30px;
+    border: 2px gray solid;
+    margin-bottom: 10px;
+}
+
+#yatienescuenta {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 290px;
+}
+
+#registerenviar {
+    background-color: rgb(73, 73, 73);
+    color: aliceblue;
+    height: 25px;
+}
+
+.regiser_background a {
+    color: rgb(16, 1, 150);
+}
+
+.piederegiser {
+    width: 100%;
+    height: 220px;
+}
+
+.piederegister_imagen {
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    opacity: 0.5;
+    margin-top: -50;
+    box-shadow: -5px -5px 5px rgba(0,0,0,.5);
+}
+
+#registermail {
+    margin-left: -228px;
+}
+
+#registerenviar {
+    margin-top: 80px;
+}
