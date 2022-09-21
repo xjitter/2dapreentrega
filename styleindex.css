@@ -5,7 +5,7 @@
 
 body {
     background-color: rgb(29, 28, 28);
-    width: 100%;
+    width: 98%;
     height: 100%;
 }
 
@@ -106,7 +106,7 @@ body {
         box-shadow: 0px 4px 3px rgba(0,0,0,.5);
         background-color: orangered;
         border: 3px rgb(131, 35, 0) solid;
-        width: 100%;
+        width: 100.5%;
         height: 40px;
     }
     .nav_responsive_icon {
@@ -228,14 +228,14 @@ body {
         display: block;
     }
     .info_responsive_imagen {
-        width: 100%;
+        width: 101%;
         height: 50%;
         margin-bottom: 0;
         opacity: 0.7;
     }
     .info_responsive_background {
         background-color: rgb(0, 0, 0);
-        width: 100%;
+        width: 101.1%;
     }
     .info_responsive_background h2 {
         margin-top: 10px;
@@ -414,7 +414,7 @@ body {
     }
     .mangas_responsive_mangasdisponibles1 {
         display: flex;
-        width: 100%;
+        width: 102%;
         flex-direction: row;
         text-align: center;
         opacity: 0.7;
@@ -436,7 +436,7 @@ body {
 
     .mangas_responsive_mangasdisponibles2 {
         display: flex;
-        width: 100%;
+        width: 102%;
         flex-direction: row;
         text-align: center;
         opacity: 0.7;
@@ -457,7 +457,7 @@ body {
     }
     .mangas_responsive_mangasdisponibles3 {
         display: flex;
-        width: 100%;
+        width: 102%;
         flex-direction: row;
         text-align: center;
         opacity: 0.7;
@@ -478,7 +478,7 @@ body {
     }
     .mangas_responsive_mangasdisponibles4 {
         display: flex;
-        width: 100%;
+        width: 102%;
         flex-direction: row;
         text-align: center;
         opacity: 0.7;
@@ -499,7 +499,7 @@ body {
     }
     .mangas_responsive_mangasdisponibles5 {
         display: flex;
-        width: 100%;
+        width: 102%;
         flex-direction: row;
         text-align: center;
         opacity: 0.7;
@@ -520,7 +520,7 @@ body {
     }
     .mangas_responsive_mangasdisponibles6 {
         display: flex;
-        width: 100%;
+        width: 102%;
         flex-direction: row;
         text-align: center;
         opacity: 0.7;
@@ -605,7 +605,7 @@ body {
         flex-direction: row;
         background-color: orangered;
         border: 3px rgb(131, 35, 0) solid;
-        width: 100%;
+        width: 101.1%;
         height: 40px;
     }
     .discordicono-res {

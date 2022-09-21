@@ -16,10 +16,16 @@
 </head>
 <body>
     <header>
+        <!--Nav-->
         <nav class="encabezadologin">
             <img class="encabezadologin_imagen" src="imagenes/encabezado-imagen-login.png">
         </nav>
+        <!--Nav responsive-->
+        <nav class="encabezadologin-res">
+            <img class="encabezadologin_imagen-res" src="imagenes/encabezado-imagen-login.png">
+        </nav>
     </header>
+    <!--Login-->
     <section class="login">
         <div class="login_background">
         <h2>Inicia Sesión a tu cuenta de Fiumba Manga</h2>
@@ -32,8 +38,26 @@
         <a id="olvidemicontra" href="contactanos.html">¿Has olvidado tu contraseña? ¡Contactanos!</a>
         </div>
     </section>
+    <!--Login responsive-->
+    <section class="login-res">
+        <div class="login_background-res">
+        <h2>Inicia Sesión a tu cuenta de Fiumba Manga</h2>
+        <form class="login_formulario-res">
+            <input id="loginame-res" type="text" placeholder="Nombre"><br>
+            <input id="loginpassword-res" type="password" placeholder="Contraseña">
+            <input id="loginenviar-res" type="submit" placeholder="Enviar">
+        </form>
+        <a id="notienescuenta-res" href="register.html">¿No tienes una cuenta todavía? ¡Registrate!</a><br>
+        <a id="olvidemicontra-res" href="contactanos.html">¿Has olvidado tu contraseña? ¡Contactanos!</a>
+        </div>
+    </section>
+    <!--Footer Desktop-->
     <footer class="piedelogin">
         <img class="piedelogin_imagen" src="imagenes/piedepagina-imagen-login.png">
+    </footer>
+    <!--Footer Responsive-->
+    <footer class="piedelogin-res">
+        <img class="piedelogin_imagen-res" src="imagenes/piedeloginres.jpg">
     </footer>
 </body>
 </html>
