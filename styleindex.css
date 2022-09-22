@@ -283,6 +283,8 @@ body {
 
 .mangas_mangasdisponibles1 img:hover {
     opacity: 1;
+    width: 255px;
+    height: 205px;
 }
 
 .mangas_mangasdisponibles1 label  {
@@ -309,6 +311,8 @@ body {
 
 .mangas_mangasdisponibles2 img:hover {
     opacity: 1;
+    width: 255px;
+    height: 205px;
 }
 
 .mangas_mangasdisponibles2 label  {
@@ -320,6 +324,7 @@ body {
     margin-top: 210px;
     margin-left: 35px;
 }
+
 
 #spyfamilyname {
     margin-top: 210px;
@@ -365,6 +370,8 @@ body {
 
 .mangas_mangasdisponibles3 img:hover {
     opacity: 1;
+    width: 255px;
+    height: 205px;
 }
 
 .mangas_mangasdisponibles3 label  {
