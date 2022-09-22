@@ -177,6 +177,8 @@ body {
 
 .mangas_deinteres img:hover {
     opacity: 1;
+    width: 255px;
+    height: 205px;
 }
 
 .mangas_deinteres label  {
