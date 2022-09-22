@@ -46,6 +46,17 @@ body {
     margin-top: 0;
     width: 100%px;
     height: 615px;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .login_background {
@@ -114,6 +125,17 @@ body {
         margin-top: 0;
         width: 100%px;
         height: 615px;
+        animation-duration: 2s;
+        animation-name: apareceresponsive;
+        animation-iteration-count: initial;
+    }
+    @keyframes apareceresponsive {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
     .login_background-res {
         border-radius: 15px;
