@@ -41,6 +41,24 @@ body {
     color: rgb(107, 2, 2);
     margin-top: 10px;
     margin-left: 65px;
+    animation-duration: 2s;
+    animation-name: entrar;
+    animation-iteration-count: initial;
+}
+
+@keyframes entrar {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        color: rgb(134, 20, 0);
+    }
+    75% {
+        color: rgb(107, 2, 2);
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .nav_login {
