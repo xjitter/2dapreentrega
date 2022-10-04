@@ -50,6 +50,7 @@ body {
     animation-name: aparecer;
     animation-iteration-count: initial;
 }
+
 @keyframes aparecer{
     0% {
         opacity: 0;
@@ -99,6 +100,12 @@ body {
     position: absolute;
     margin-left: 258px;
     margin-top: 40px;
+}
+
+#volver{
+    position: absolute;
+    margin-left: 307px;
+    margin-top: 90px;
 }
 
 #loginenviar {

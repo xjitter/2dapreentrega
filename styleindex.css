@@ -183,7 +183,7 @@ body {
 }
 
 .info_imagen {
-    display: inline;
+    display: inline-block;
     width: 42%;
     height: 500px;
     transition: 0.7s;
@@ -206,7 +206,7 @@ body {
     position: absolute;
     margin-top: 80px;
     color: blueviolet;
-    padding-left: 19.5%;
+    padding-left: 15%;
 }
 
 .info_caracteristicas {
@@ -230,6 +230,7 @@ body {
 }
 
 .info_caracteristicas2 li {
+    margin-left: 30%;
     font-size: 15px;
     height: 30px;
 }
@@ -647,8 +648,7 @@ body {
         justify-content: space-evenly;
         flex-direction: row;
         background-color: orangered;
-        border: 3px rgb(131, 35, 0) solid;
-        width: 101.1%;
+        width: 102%;
         height: 40px;
     }
     .discordicono-res {
