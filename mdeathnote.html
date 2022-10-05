@@ -16,6 +16,7 @@
 </head>
 <body>
     <header>
+        <!--Nav Desktop-->
         <nav class="nav">
             <img class="nav_icon" src="imagenes/fmstoreicono.png">
             <a class="nav_name" href="index.html">FiumbaMangaStore</a>
@@ -26,7 +27,18 @@
             Registrarse
             </div></a>
         </nav>
+        <!--Nav responsive-->
+        <nav class="nav_responsive">
+            <img class="nav_responsive_icon" src="imagenes/fmstoreicono.png">
+            <a class="nav_responsive_name" href="index.html">FiumbaMangaStore</a>
+            <div class="signupandlogin"><a class="nav_responsive_login" href="login.html">
+            Iniciar sesión</a>
+            <a class="nav_responsive_register" href="register.html">
+            Registrarse
+            </a></div>  
+            </nav>
     </header>
+    <!--Compra manga Desktop-->
     <img class="compra_mangaimg" src="imagenes/deathnote.jpg">
         <section class="compra">       
             <h1 class="compra_titulo">Death Note</h1>
@@ -44,6 +56,25 @@
                 <input class="compra_boton" value="Comprar" type="submit">
             </form>
         </section>
+        <!--Compra manga Responsive-->
+        <img class="compra_mangaimg-res" src="imagenes/deathnote.jpg">
+        <section class="compra-res">       
+            <h1 class="compra_titulo-res">Death Note</h1>
+            <h3 class="compra_envio-res">Envio gratis, llega en 2 días habiles</h3>
+            <h4 class="compra_precio-res">$1100 c/u</h4>
+            <p class="compra_cantidad-res"> Elige cuantos tomos quieres comprar</p>   
+            <form class="compra_form1-res">
+                <input type="number">
+            </form>  
+            <p class="compra_tomo-res">Elige el tomo que quieres comprar</p>
+            <form class="compra_form2-res">
+                <input type="number">
+            </form>
+            <form class="compra_form3-res">
+                <input class="compra_boton-res" value="Comprar" type="submit">
+            </form>
+    </section>
+    <!--Mangas de interes Desktop-->
         <h2 class="mangas_title">Mangas que quizás te interesen</h2>
         <section class="mangas">    
             <div class="mangas_deinteres">  
@@ -52,7 +83,17 @@
             <a href="mkimetsunoyaiba.html"><label id="kimetsuname">Manga de Kimetsu no yaiba</label><img src="imagenes/kimetsunoyaiba.jpg"></a>
             </div>
         </section>
-        <footer>
+    <!--Mangas de interes Responsive-->
+        <h2 class="mangas_title-res">Mangas que quizás te interesen</h2>
+        <section class="mangas-res">    
+            <div class="mangas_deinteres-res">  
+            <a href="mchainsaw.html"><label id="chainsawname-res">Manga de ChainsawMan</label><img src="imagenes/chainsaw.jpg"></a>
+            <a href="mdragonballsuper.html"><label id="dragonballname-res">Manga de Dragon ball super</label><img src="imagenes/dragonballsuper.jpg"></a>
+            <a href="mkimetsunoyaiba.html"><label id="kimetsuname-res">Manga de Kimetsu no yaiba</label><img src="imagenes/kimetsunoyaiba.jpg"></a>
+            </div>
+        </section>
+    <!--Footer Desktop-->
+        <footer class="footerdesktop">
             <img class="discordicono" src="imagenes/discordlogo.png">
             <div class="discordfooter">
             <a href="https://discord.gg/MWXtvGf" target="_blank"><label id="discordname">Discord</label></a>
@@ -62,5 +103,16 @@
             <a href="contactanos.html"><label id="contactanosname">Contactanos</label></a>
             </div>
         </footer>
+    <!--Footer Responsive-->
+     <footer class="footer_responsive">
+        <img class="discordicono-res" src="imagenes/discordlogo.png">
+        <div class="discordfooter-res">
+        <a href="https://discord.gg/MWXtvGf" target="_blank"><label id="discordname-res">Discord</label></a>
+        </div>
+        <img class="contactanosicono-res" src="imagenes/contactanos.png">
+        <div class="contactfooter-res">
+        <a href="contactanos.html"><label id="contactanosname-res">Contactanos</label></a>
+        </div>
+    </footer>
 </body>
 </html>
