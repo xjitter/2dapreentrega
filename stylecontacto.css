@@ -4,16 +4,13 @@
 }
 
 body {
-    color: black;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.6),
-        rgba(0, 0, 0, 0.6)
-    )
-    ,url("https://cdn.wallpapersafari.com/43/83/PXtuOZ.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(29, 28, 28);
+    width: 98%;
+    height: 100%;
 }
+
+
+/*Nav desktop*/
 
 .nav {
     position:fixed;
@@ -95,24 +92,88 @@ body {
 .nav_responsive {
     display: none;
 }
+/*Nav responsive*/
+    @media Screen and (max-width: 768px) {
+        .nav {
+            display: none;
+        }
+        .nav_responsive {
+            display: block;
+            position:fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+            background-color: orangered;
+            border: 3px rgb(131, 35, 0) solid;
+            width: 100.5%;
+            height: 40px;
+        }
+        .nav_responsive_icon {
+            width: 30px;
+            height: 40px;
+        }
+        .nav_responsive_name {
+            position: absolute;
+            font-family: 'Ubuntu', sans-serif;
+            color: rgb(107, 2, 2);
+            margin-top: 10px;
+            margin-left: 10px;
+            animation-duration: 2s;
+            animation-name: entraresponsive;
+            animation-iteration-count: initial;
+        }
+    
+        @keyframes entraresponsive {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                color: rgb(134, 20, 0);
+            }
+            75% {
+                color: rgb(107, 2, 2);
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .signupandlogin {
+            display: flex;
+            flex-direction: column;
+            float: right;
+            height: 40px;
+            background-color: rgb(202, 49, 2);
+            border-left: 3px rgb(131, 35, 0) solid;
+        }
+        .nav_responsive_login{
+            font-size: medium;
+            color: black;
+            border-bottom: 3px rgb(131, 35, 0) solid;
+        }
+        .nav_responsive_register {
+            font-size: medium;
+            color: black;
+            margin-left: 4px;
+        }
+}
 
 h1 {
-    position: absolute;
-    margin-left: 1250px;
+    text-align: center;
     margin-top: 200px;
 }
 
 h3 {
-    position: absolute;
-    margin-left: 1120px;
-    margin-top: 500px;
+    text-align: center;
 }
 
 .consulta {
+    margin-top: -220px;
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 form {
@@ -135,4 +196,24 @@ form {
 }
 .consulta_responsive {
     display: none;
+}
+#consulta_enviar-res {
+    display: none;
+}
+@media screen and (max-width:768px){
+    #consulta_text {
+        width: 250px;
+        height: 70px;
+    }
+    #consulta_enviar {
+        display: none;
+    }
+    #consulta_enviar-res {
+        display: flex;
+        margin-left: 100px;
+        position: absolute;
+        cursor: pointer;
+        color: white;
+        background-color: black;
+    }
 }
