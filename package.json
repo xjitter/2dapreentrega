@@ -1,0 +1,20 @@
+{
+  "name": "3era-pre-entrega-sebastian-uriel-dacosta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xjitter/2dapreentregabeta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xjitter/2dapreentregabeta/issues"
+  },
+  "homepage": "https://github.com/xjitter/2dapreentregabeta#readme"
+}
