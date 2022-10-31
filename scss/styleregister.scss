@@ -1,0 +1,239 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+}
+/*Nav Desktop*/
+.encabezadoregister{
+    @include sizes(100%, 200px);
+
+    &_imagen {
+        @include sizes(100%, 200px);
+        opacity: 0.5;
+        box-shadow: 0px 5px 3px rgba(0,0,0,.5);
+    }
+}
+.encabezadoregister-res {
+    display: none;
+}
+/*Nav Responsive*/
+@media Screen and (max-width: 768px) {
+    .encabezadoregister {
+        display: none;
+    }
+    .encabezadoregister-res {
+        display: inline-block;
+        @include sizes(100%, 200px);
+    }
+    .encabezadoregister_imagen-res{
+        @include sizes(100%, 200);
+        opacity: 0.5;
+        box-shadow: 0px 5px 3px rgba(0,0,0,.5);
+    }
+}
+/*Register Desktop*/
+.register {  
+    display: flex;
+    justify-content: center;
+    margin-bottom: -200px;
+    @include sizes(100%, 615px);
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+
+    @keyframes aparecer{
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .register_background {
+        margin-top: 8%;
+        border-radius: 15px;
+        border: 5px solid rgb(109, 1, 1);
+        background-color:  $coolboxbgcolor;
+        @include sizes(800px, 400px);
+
+        .register_formulario {
+            display: flex;
+            padding-top: 50px;
+            padding-left: 160px;
+            flex-direction: row;
+            justify-content: space-around;
+
+            & input{
+                box-shadow: 0px 2px 0px black;
+                border-radius: 5px;
+                height: 30px;
+                border: 2px gray solid;
+                margin-bottom: 10px;
+            }
+
+            #registerenviar {
+                background-color: rgb(73, 73, 73);
+                color: $textodeguia;
+                height: 25px;
+            }
+        }
+
+        .register_formulario2 {
+            display: flex;
+            margin-top: 50px;
+            padding-top: 50px;
+            padding-left: 22px;
+            flex-direction: row;
+            justify-content: space-around;
+
+            & input{
+                box-shadow: 0px 2px 0px black;
+                border-radius: 5px;
+                height: 30px;
+                border: 2px gray solid;
+                margin-bottom: 10px;
+            }
+
+            #registermail {
+                margin-left: -228px;
+            }
+        }
+
+        & h2 {
+            font-family: $fontubuntu;
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 202px;
+        }
+
+        #yatienescuenta {
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 290px;
+        }
+
+        #volver {
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 315px;
+        }
+
+        & a {
+            color: rgb(16, 1, 150);
+        }
+    }
+}
+
+.register-res {
+    display: none;
+}
+
+/*Register Responsive*/
+@media Screen and (max-width: 768px) {
+    .register {
+        display: none;
+    }
+    .register-res {  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        @include sizes(100%, 220px);
+        animation-duration: 2s;
+        animation-name: apareceresponsive;
+        animation-iteration-count: initial;
+
+        @keyframes apareceresponsive {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .register_background-res {
+            margin-top: 60%;
+            border-radius: 15px;
+            border: 5px solid $coolboxborder;
+            background-color: $coolboxbgcolor;
+            @include sizes(800px, 250px);
+            text-align: center;
+
+            & h2 {
+                font-family: $fontubuntu;
+                font-size: medium;
+                display: inline-block;
+                text-align: center;
+            }
+
+            .register_formulario-res {
+                display: flex;
+                padding-top: 20px;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .register_formulario2-res {
+                display: flex;
+                padding-top: 0px;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+
+                #registercodigopostal-res {
+                    margin-top: -5px;
+                }
+                #registermail-res {
+                    margin-top: 15px;
+                }
+                #registerenviar-res {
+                    margin-top: 10px;
+                    margin-left: -0.5%;
+                    background-color: rgb(73, 73, 73);
+                    color: $textodeguia;
+                    height: 18px;
+                }
+            }
+        }
+    }
+}
+
+/*Footer Desktop*/
+.piederegister {
+    .piederegister_imagen {
+        position: absolute;
+        @include sizes(100%, 220px);
+        opacity: 0.5;
+        margin-top: 20%;
+        box-shadow: -5px -5px 5px rgba(0,0,0,.5);
+    }
+}
+
+.piederegister-res {
+    display: none;
+}
+/*Footer Responsive*/
+@media Screen and (max-width: 768px) {
+    .piederegister {
+        display: none;
+    }
+    .piederegister-res {
+        display: block;
+    }
+    .piederegister_imagen-res {
+        position: absolute;
+        @include sizes(100%, 220px);
+        opacity: 0.5;
+        margin-top: 65%;
+        box-shadow: -5px -5px 5px rgba(0,0,0,.5);
+    }
+}

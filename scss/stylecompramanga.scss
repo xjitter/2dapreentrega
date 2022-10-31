@@ -1,0 +1,516 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+}
+/*Nav desktop*/
+.nav {
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+    background-color: $coolboxbgcolor;
+    border: 3px $coolboxborder solid;
+    @include sizes (100%, 60px);
+
+    .nav_icon {
+        position: absolute;
+        display: inline-block;
+        @include sizes (40px, 53px);
+        margin-left: 10px;
+    }
+
+    .nav img {
+        margin-top: 5px;
+    }
+
+    .nav_name {
+        display: inline-block;
+        font-family: $fontubuntu;
+        font-size: 35px;
+        color: rgb(107, 2, 2);
+        margin-top: 10px;
+        margin-left: 65px;
+        animation-duration: 2s;
+        animation-name: entrar;
+        animation-iteration-count: initial;
+    }
+
+    @keyframes entrar {
+        0% {
+            opacity: 0;
+        }
+        25% {
+            color: rgb(134, 20, 0);
+        }
+        75% {
+            color: $coolboxborder;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .nav_login {
+        float: right;
+        margin-top: 0;
+        margin-right: 0%;
+        @include sizes (150px, 57px);
+        color: black;
+        background-color: $coolboxbgcolor;
+        border: $coolboxborder 2px solid;
+        border-right: 0px $coolboxborder solid;
+        transition: 0.7s;
+
+        &:hover{
+            background-color: rgb(247, 96, 41);
+        }
+    }
+
+    .nav_login div {
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    .nav_register {
+        float: right;
+        margin-top: 0;
+        margin-right: 0%;
+        @include sizes (150px, 57px);
+        color: black;
+        background-color: $coolboxbgcolor;
+        border: $coolboxborder 2px solid;
+        border-left: 3px $coolboxborder solid;
+        border-right: 2px $coolboxborder solid;
+        transition: 0.7s;
+
+        &:hover {
+            background-color: rgb(247, 96, 41);
+        }
+    }
+
+    .nav_register div {
+        padding-top: 20px;
+        padding-left: 35px;
+    }
+}
+.nav_responsive {
+    display: none;
+}
+
+.nav_responsive {
+    display: none;
+}
+/*Nav responsive*/
+
+@media Screen and (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    .nav_responsive {
+        display: block;
+        position:fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+        background-color: $coolboxbgcolor;
+        border: 3px $coolboxborder solid;
+        @include sizes (100.5%, 40px);
+
+        .nav_responsive_icon {
+            @include sizes (30px, 40px);
+        }
+
+        .nav_responsive_name {
+            position: absolute;
+            font-family: $fontubuntu;
+            color: rgb(107, 2, 2);
+            margin-top: 10px;
+            margin-left: 10px;
+            animation-duration: 2s;
+            animation-name: entraresponsive;
+            animation-iteration-count: initial;
+        }
+
+        @keyframes entraresponsive {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                color: rgb(134, 20, 0);
+            }
+            75% {
+                color: $coolboxborder;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .signupandlogin {
+            display: flex;
+            flex-direction: column;
+            float: right;
+            height: 40px;
+            background-color: rgb(202, 49, 2);
+            border-left: 3px $coolboxborder solid;
+        }
+
+        .nav_responsive_login{
+            font-size: medium;
+            color: black;
+            border-bottom: 3px $coolboxborder solid;
+        }
+
+        .nav_responsive_register {
+            font-size: medium;
+            color: black;
+            margin-left: 4px;
+        }
+    }   
+}
+
+/*Compra Desktop*/
+
+.compra_mangaimg {
+    width: 40%;
+    height: 563px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.compra_mangaimg:hover {
+    opacity: 1;
+}
+
+.compra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    float: right;
+    margin-top: 65px;
+    background-color: black;
+    @include sizes (60%, 500px);
+
+    .compra_titulo {
+        color: $textodeguia;
+        font-family: $fontubuntu;
+    }
+
+    .compra_envio {
+        color: $textodeguia;
+        font-family: $fontubuntu;
+    }
+
+    .compra_precio {
+        color: $textodeguia;
+        font-family: $fontubuntu;
+    }
+
+    .compra_cantidad {
+        color: $textodeguia;
+        font-family: $fontubuntu;
+    }
+
+    .compra_tomo {
+        color: $textodeguia;
+        font-family: $fontubuntu;
+    }
+
+    .compra_form1 input {
+        border: rgb(0, 253, 241) 2px solid;
+    }
+
+    .compra_form2 input {
+        border: rgb(81, 255, 0) 2px solid;
+    }
+
+    .compra_boton {
+        cursor: pointer;
+        background-color: rgb(82, 82, 255);
+        font-family: $fontubuntu;
+        font-size: 22px;
+        @include sizes (400px, 80px);
+    }
+}
+
+.compra-res {
+    display: none;
+}
+.compra_mangaimg-res {
+    display: none;
+}
+
+/*Compra Responsive*/
+
+@media Screen and (max-width: 768px)
+{
+    .compra {
+        display: none;
+    }
+    .compra_mangaimg {
+        display: none;
+    }
+    .compra_mangaimg-res {
+        display: block;
+        @include sizes (100%, 100%);
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+    .compra-res {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 0;
+        background-color: black;
+        @include sizes (100%, 500px);
+
+        .compra_titulo-res {
+            color: $textodeguia;
+            font-family: $fontubuntu;
+        }
+
+        .compra_envio-res {
+            color: $textodeguia;
+            font-family: $fontubuntu;
+        }
+
+        .compra_precio-res {
+            color: $textodeguia;
+            font-family: $fontubuntu;
+        }
+
+        .compra_cantidad-res {
+            color: $textodeguia;
+            font-family: $fontubuntu;
+        }
+
+        .compra_tomo-res {
+            color: $textodeguia;
+            font-family: $fontubuntu;
+        }
+
+        .compra_form1-res input {
+            border: rgb(0, 253, 241) 2px solid;
+        }
+
+        .compra_form2-res input {
+            border: rgb(81, 255, 0) 2px solid;
+        }
+
+        .compra_form3-res {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .compra_boton-res {
+            cursor: pointer;
+            background-color: rgb(82, 82, 255);
+            font-family: $fontubuntu;
+            font-size: 22px;
+            @include sizes (280px, 80px);
+        }
+    }  
+}
+
+/*Mangas De interes Desktop*/
+
+.mangas_title {
+    margin-top: 20px;
+    text-align: center;
+    font-family: $fontsilk;
+    color: orange;
+    transition: 0.2s;
+}
+
+.mangas{
+
+    .mangas_deinteres {
+        margin-top: 20px;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        & a img {
+            @include sizes (250px, 200px);
+            opacity: 0.7;
+            transition: 0.5s;
+
+            &:hover {
+                opacity: 1;
+                @include sizes (255px, 205px);
+            }
+        }
+
+        & label  {
+            margin-top: 240px;
+            color: $textodeguia;
+            position: absolute;
+        }
+
+        & a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+}
+
+.mangas_deinteres-res {
+    display: none;
+}
+.mangas_title-res {
+    display: none;
+}
+
+/*Mangas de interes Responsive*/
+
+@media Screen and (max-width:768px) {
+    .mangas {
+        display: none;
+    }
+    .mangas_deinteres {
+        display: none;
+    }
+    .mangas_title {
+        display: none;
+    }
+    .mangas_title-res {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        text-align: center;
+        font-family: $fontsilk;
+        color: orange;
+    }
+    .mangas-res {
+        display: block;
+
+        .mangas_deinteres-res {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            & img {
+                @include sizes (70%, 50%);
+                opacity: 0.5;
+            }
+
+            & a label {
+                color: $textodeguia;
+                cursor: pointer;
+            }
+
+            & a {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    } 
+}
+
+/*Footer Desktop*/
+
+.footerdesktop {
+    position: absolute;
+    @include sizes (100%, 50px);
+    background-color: $coolboxbgcolor;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+
+    .discordicono {
+        position: absolute;
+        display: inline-block;
+        @include sizes (50px, 50px);
+    }
+
+    .discordfooter {
+        display: inline-block;
+        padding-left: 60px;
+        padding-top: 15px;
+
+        #discordname {
+            cursor: pointer;
+            color: black;
+            display: inline-block;
+            font-size: 18px;
+        }
+    }
+
+    .contactanosicono {
+        margin-left: 100px;
+        position: absolute;
+        display: inline-block;
+        @include sizes (50px, 50px);
+    }
+
+    .contactfooter {
+        display: inline-block;
+        padding-left: 165px;
+        padding-top: 15px;
+
+        #contactanosname {
+            cursor: pointer;
+            color: black;
+            display: inline-block;
+            font-size: 18px;
+        }
+    }
+}
+
+.footer_responsive {
+    display: none;
+}
+
+/*Footer Responsive*/
+
+@media Screen and (max-width: 768px) {
+
+    .footerdesktop {
+        display: none;
+    }
+    .footer_responsive {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        background-color: $coolboxbgcolor;
+        @include sizes (102%, 40px);
+
+        .discordicono-res {
+            @include sizes (40px, 40px);
+        }
+    }
+    
+    #discordname-res {
+        color: black;
+        font-size: 16px;
+        position: absolute;
+        margin-top: 1.7%;
+        margin-left: -15%;
+        cursor: pointer;
+    }
+    #contactanosname-res {
+        color: black;
+        font-size: 16px;
+        position: absolute;
+        margin-top: 1.7%;
+        margin-left: -13.5%;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,189 @@
+/*Colores*/
+/*Fuente*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #1d1c1c; }
+
+/*Nav Desktop*/
+.encabezadoregister {
+  height: 200px;
+  width: 100%; }
+  .encabezadoregister_imagen {
+    height: 200px;
+    width: 100%;
+    opacity: 0.5;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.5); }
+
+.encabezadoregister-res {
+  display: none; }
+
+/*Nav Responsive*/
+@media Screen and (max-width: 768px) {
+  .encabezadoregister {
+    display: none; }
+  .encabezadoregister-res {
+    display: inline-block;
+    height: 200px;
+    width: 100%; }
+  .encabezadoregister_imagen-res {
+    height: 200;
+    width: 100%;
+    opacity: 0.5;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.5); } }
+
+/*Register Desktop*/
+.register {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -200px;
+  height: 615px;
+  width: 100%;
+  animation-duration: 1s;
+  animation-name: aparecer;
+  animation-iteration-count: initial; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .register .register_background {
+    margin-top: 8%;
+    border-radius: 15px;
+    border: 5px solid #6d0101;
+    background-color: orangered;
+    height: 400px;
+    width: 800px; }
+    .register .register_background .register_formulario {
+      display: flex;
+      padding-top: 50px;
+      padding-left: 160px;
+      flex-direction: row;
+      justify-content: space-around; }
+      .register .register_background .register_formulario input {
+        box-shadow: 0px 2px 0px black;
+        border-radius: 5px;
+        height: 30px;
+        border: 2px gray solid;
+        margin-bottom: 10px; }
+      .register .register_background .register_formulario #registerenviar {
+        background-color: #494949;
+        color: white;
+        height: 25px; }
+    .register .register_background .register_formulario2 {
+      display: flex;
+      margin-top: 50px;
+      padding-top: 50px;
+      padding-left: 22px;
+      flex-direction: row;
+      justify-content: space-around; }
+      .register .register_background .register_formulario2 input {
+        box-shadow: 0px 2px 0px black;
+        border-radius: 5px;
+        height: 30px;
+        border: 2px gray solid;
+        margin-bottom: 10px; }
+      .register .register_background .register_formulario2 #registermail {
+        margin-left: -228px; }
+    .register .register_background h2 {
+      font-family: "Ubuntu", sans-serif;
+      display: inline-block;
+      margin-top: 30px;
+      margin-left: 202px; }
+    .register .register_background #yatienescuenta {
+      position: absolute;
+      margin-top: 20px;
+      margin-left: 290px; }
+    .register .register_background #volver {
+      position: absolute;
+      margin-top: 45px;
+      margin-left: 315px; }
+    .register .register_background a {
+      color: #100196; }
+
+.register-res {
+  display: none; }
+
+/*Register Responsive*/
+@media Screen and (max-width: 768px) {
+  .register {
+    display: none; }
+  .register-res {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    height: 220px;
+    width: 100%;
+    animation-duration: 2s;
+    animation-name: apareceresponsive;
+    animation-iteration-count: initial; }
+  @keyframes apareceresponsive {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } }
+    .register-res .register_background-res {
+      margin-top: 60%;
+      border-radius: 15px;
+      border: 5px solid #6d0101;
+      background-color: orangered;
+      height: 250px;
+      width: 800px;
+      text-align: center; }
+      .register-res .register_background-res h2 {
+        font-family: "Ubuntu", sans-serif;
+        font-size: medium;
+        display: inline-block;
+        text-align: center; }
+      .register-res .register_background-res .register_formulario-res {
+        display: flex;
+        padding-top: 20px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+      .register-res .register_background-res .register_formulario2-res {
+        display: flex;
+        padding-top: 0px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; }
+        .register-res .register_background-res .register_formulario2-res #registercodigopostal-res {
+          margin-top: -5px; }
+        .register-res .register_background-res .register_formulario2-res #registermail-res {
+          margin-top: 15px; }
+        .register-res .register_background-res .register_formulario2-res #registerenviar-res {
+          margin-top: 10px;
+          margin-left: -0.5%;
+          background-color: #494949;
+          color: white;
+          height: 18px; } }
+
+/*Footer Desktop*/
+.piederegister .piederegister_imagen {
+  position: absolute;
+  height: 220px;
+  width: 100%;
+  opacity: 0.5;
+  margin-top: 20%;
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5); }
+
+.piederegister-res {
+  display: none; }
+
+/*Footer Responsive*/
+@media Screen and (max-width: 768px) {
+  .piederegister {
+    display: none; }
+  .piederegister-res {
+    display: block; }
+  .piederegister_imagen-res {
+    position: absolute;
+    height: 220px;
+    width: 100%;
+    opacity: 0.5;
+    margin-top: 65%;
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.5); } }
