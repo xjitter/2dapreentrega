@@ -20,6 +20,7 @@ body {
   border: 3px #6d0101 solid;
   height: 60px;
   width: 100%; }
+<<<<<<< HEAD
 
 .nav_icon {
   position: absolute;
@@ -77,6 +78,69 @@ body {
 .nav_login div {
   padding-top: 20px;
   padding-left: 30px; }
+=======
+  .nav .nav_icon {
+    position: absolute;
+    display: inline-block;
+    height: 53px;
+    width: 40px;
+    margin-left: 10px; }
+  .nav .nav img {
+    margin-top: 5px; }
+  .nav .nav_name {
+    display: inline-block;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 35px;
+    color: #6b0202;
+    margin-top: 10px;
+    margin-left: 65px;
+    animation-duration: 2s;
+    animation-name: entrar;
+    animation-iteration-count: initial; }
+
+@keyframes entrar {
+  0% {
+    opacity: 0; }
+  25% {
+    color: #861400; }
+  75% {
+    color: #6d0101; }
+  100% {
+    opacity: 1; } }
+  .nav .nav_login {
+    float: right;
+    margin-top: 0;
+    margin-right: 0%;
+    height: 57px;
+    width: 150px;
+    color: black;
+    background-color: orangered;
+    border: #6d0101 2px solid;
+    border-right: 0px #6d0101 solid;
+    transition: 0.7s; }
+    .nav .nav_login:hover {
+      background-color: #f76029; }
+  .nav .nav_login div {
+    padding-top: 20px;
+    padding-left: 30px; }
+  .nav .nav_register {
+    float: right;
+    margin-top: 0;
+    margin-right: 0%;
+    height: 57px;
+    width: 150px;
+    color: black;
+    background-color: orangered;
+    border: #6d0101 2px solid;
+    border-left: 3px #6d0101 solid;
+    border-right: 2px #6d0101 solid;
+    transition: 0.7s; }
+    .nav .nav_register:hover {
+      background-color: #f76029; }
+  .nav .nav_register div {
+    padding-top: 20px;
+    padding-left: 35px; }
+>>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 
 .nav_responsive {
   display: none; }
@@ -96,6 +160,7 @@ body {
     border: 3px #6d0101 solid;
     height: 40px;
     width: 100.5%; }
+<<<<<<< HEAD
   .nav_responsive_icon {
     height: 40px;
     width: 30px; }
@@ -108,6 +173,20 @@ body {
     animation-duration: 2s;
     animation-name: entraresponsive;
     animation-iteration-count: initial; }
+=======
+    .nav_responsive .nav_responsive_icon {
+      height: 40px;
+      width: 30px; }
+    .nav_responsive .nav_responsive_name {
+      position: absolute;
+      font-family: "Ubuntu", sans-serif;
+      color: #6b0202;
+      margin-top: 10px;
+      margin-left: 10px;
+      animation-duration: 2s;
+      animation-name: entraresponsive;
+      animation-iteration-count: initial; }
+>>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
   @keyframes entraresponsive {
     0% {
       opacity: 0; }
@@ -117,6 +196,7 @@ body {
       color: #6d0101; }
     100% {
       opacity: 1; } }
+<<<<<<< HEAD
   .signupandlogin {
     display: flex;
     flex-direction: column;
@@ -133,6 +213,25 @@ body {
     color: black;
     margin-left: 4px; } }
 
+=======
+    .nav_responsive .signupandlogin {
+      display: flex;
+      flex-direction: column;
+      float: right;
+      height: 40px;
+      background-color: #ca3102;
+      border-left: 3px #6d0101 solid; }
+    .nav_responsive .nav_responsive_login {
+      font-size: medium;
+      color: black;
+      border-bottom: 3px #6d0101 solid; }
+    .nav_responsive .nav_responsive_register {
+      font-size: medium;
+      color: black;
+      margin-left: 4px; } }
+
+/*Consulta Desktop*/
+>>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 h1 {
   font-family: "Silkscreen", cursive;
   color: orange;
@@ -150,6 +249,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+<<<<<<< HEAD
 
 form {
   z-index: 20;
@@ -169,19 +269,57 @@ form {
 
 .consulta_responsive {
   display: none; }
+=======
+  .consulta_form {
+    z-index: 20;
+    color: #420000; }
+  .consulta #consulta_text {
+    resize: none;
+    margin-top: 250px;
+    height: 150px;
+    width: 500px; }
+  .consulta #consulta_enviar {
+    cursor: pointer;
+    margin-left: 225px;
+    color: white;
+    background-color: black; }
+>>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 
 #consulta_enviar-res {
   display: none; }
 
+<<<<<<< HEAD
 @media screen and (max-width: 768px) {
   #consulta_text {
     height: 70px;
     width: 250px; }
+=======
+.consulta_responsive {
+  display: none; }
+
+#consulta_text-res {
+  display: none; }
+
+/*Consulta Responsive*/
+@media screen and (max-width: 768px) {
+  #consulta_text {
+    display: none; }
+  #consulta_text-res {
+    display: block;
+    margin-left: -20px;
+    width: 130%;
+    height: 70px;
+    margin-top: 250px; }
+>>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
   #consulta_enviar {
     display: none; }
   #consulta_enviar-res {
     display: flex;
+<<<<<<< HEAD
     margin-left: 100px;
+=======
+    margin-left: 47px;
+>>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
     position: absolute;
     cursor: pointer;
     color: white;
