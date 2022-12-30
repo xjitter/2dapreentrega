@@ -7,11 +7,7 @@
 body {
   background-color: #1d1c1c; }
 
-<<<<<<< HEAD
 /*Nav Desktop*/
-=======
-/*Nav desktop*/
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 .nav {
   position: fixed;
   z-index: 1000;
@@ -22,7 +18,6 @@ body {
   border: 3px #6d0101 solid;
   height: 60px;
   width: 100%; }
-<<<<<<< HEAD
 
 .nav_icon {
   position: absolute;
@@ -80,81 +75,11 @@ body {
 .nav_login div {
   padding-top: 20px;
   padding-left: 30px; }
-=======
-  .nav .nav_icon {
-    position: absolute;
-    display: inline-block;
-    height: 53px;
-    width: 40px;
-    margin-left: 10px; }
-  .nav .nav img {
-    margin-top: 5px; }
-  .nav .nav_name {
-    display: inline-block;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 35px;
-    color: #6b0202;
-    margin-top: 10px;
-    margin-left: 65px;
-    animation-duration: 2s;
-    animation-name: entrar;
-    animation-iteration-count: initial; }
-
-@keyframes entrar {
-  0% {
-    opacity: 0; }
-  25% {
-    color: #861400; }
-  75% {
-    color: #6d0101; }
-  100% {
-    opacity: 1; } }
-  .nav .nav_login {
-    float: right;
-    margin-top: 0;
-    margin-right: 0%;
-    height: 57px;
-    width: 150px;
-    color: black;
-    background-color: orangered;
-    border: #6d0101 2px solid;
-    border-right: 0px #6d0101 solid;
-    transition: 0.7s; }
-    .nav .nav_login:hover {
-      background-color: #f76029; }
-  .nav .nav_login div {
-    padding-top: 20px;
-    padding-left: 30px; }
-  .nav .nav_register {
-    float: right;
-    margin-top: 0;
-    margin-right: 0%;
-    height: 57px;
-    width: 150px;
-    color: black;
-    background-color: orangered;
-    border: #6d0101 2px solid;
-    border-left: 3px #6d0101 solid;
-    border-right: 2px #6d0101 solid;
-    transition: 0.7s; }
-    .nav .nav_register:hover {
-      background-color: #f76029; }
-  .nav .nav_register div {
-    padding-top: 20px;
-    padding-left: 35px; }
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 
 .nav_responsive {
   display: none; }
 
-<<<<<<< HEAD
 /*Nav Responsive*/
-=======
-.nav_responsive {
-  display: none; }
-
-/*Nav responsive*/
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 @media Screen and (max-width: 768px) {
   .nav {
     display: none; }
@@ -169,7 +94,6 @@ body {
     border: 3px #6d0101 solid;
     height: 40px;
     width: 100.5%; }
-<<<<<<< HEAD
   .nav_responsive_icon {
     height: 40px;
     width: 30px; }
@@ -182,20 +106,6 @@ body {
     animation-duration: 2s;
     animation-name: entraresponsive;
     animation-iteration-count: initial; }
-=======
-    .nav_responsive .nav_responsive_icon {
-      height: 40px;
-      width: 30px; }
-    .nav_responsive .nav_responsive_name {
-      position: absolute;
-      font-family: "Ubuntu", sans-serif;
-      color: #6b0202;
-      margin-top: 10px;
-      margin-left: 10px;
-      animation-duration: 2s;
-      animation-name: entraresponsive;
-      animation-iteration-count: initial; }
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
   @keyframes entraresponsive {
     0% {
       opacity: 0; }
@@ -205,7 +115,6 @@ body {
       color: #6d0101; }
     100% {
       opacity: 1; } }
-<<<<<<< HEAD
   .signupandlogin {
     display: flex;
     flex-direction: column;
@@ -223,34 +132,6 @@ body {
     margin-left: 4px; } }
 
 /*Compra Desktop*/
-=======
-    .nav_responsive .signupandlogin {
-      display: flex;
-      flex-direction: column;
-      float: right;
-      height: 40px;
-      background-color: #ca3102;
-      border-left: 3px #6d0101 solid; }
-    .nav_responsive .nav_responsive_login {
-      font-size: medium;
-      color: black;
-      border-bottom: 3px #6d0101 solid; }
-    .nav_responsive .nav_responsive_register {
-      font-size: medium;
-      color: black;
-      margin-left: 4px; } }
-
-/*Compra Desktop*/
-.compra_mangaimg {
-  width: 40%;
-  height: 563px;
-  opacity: 0.5;
-  transition: 0.5s; }
-
-.compra_mangaimg:hover {
-  opacity: 1; }
-
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 .compra {
   display: flex;
   flex-direction: column;
@@ -261,7 +142,6 @@ body {
   background-color: black;
   height: 500px;
   width: 60%; }
-<<<<<<< HEAD
 
 .compra_mangaimg {
   width: 40%;
@@ -305,34 +185,6 @@ body {
   font-size: 22px;
   height: 80px;
   width: 400px; }
-=======
-  .compra .compra_titulo {
-    color: white;
-    font-family: "Ubuntu", sans-serif; }
-  .compra .compra_envio {
-    color: white;
-    font-family: "Ubuntu", sans-serif; }
-  .compra .compra_precio {
-    color: white;
-    font-family: "Ubuntu", sans-serif; }
-  .compra .compra_cantidad {
-    color: white;
-    font-family: "Ubuntu", sans-serif; }
-  .compra .compra_tomo {
-    color: white;
-    font-family: "Ubuntu", sans-serif; }
-  .compra .compra_form1 input {
-    border: #00fdf1 2px solid; }
-  .compra .compra_form2 input {
-    border: #51ff00 2px solid; }
-  .compra .compra_boton {
-    cursor: pointer;
-    background-color: #5252ff;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 22px;
-    height: 80px;
-    width: 400px; }
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 
 .compra-res {
   display: none; }
@@ -346,15 +198,6 @@ body {
     display: none; }
   .compra_mangaimg {
     display: none; }
-<<<<<<< HEAD
-=======
-  .compra_mangaimg-res {
-    display: block;
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
-    transition: 0.5s; }
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
   .compra-res {
     display: flex;
     flex-direction: column;
@@ -364,7 +207,6 @@ body {
     background-color: black;
     height: 500px;
     width: 100%; }
-<<<<<<< HEAD
   .compra_mangaimg-res {
     display: block;
     height: 100%;
@@ -401,38 +243,6 @@ body {
     font-size: 22px;
     height: 80px;
     width: 280px; } }
-=======
-    .compra-res .compra_titulo-res {
-      color: white;
-      font-family: "Ubuntu", sans-serif; }
-    .compra-res .compra_envio-res {
-      color: white;
-      font-family: "Ubuntu", sans-serif; }
-    .compra-res .compra_precio-res {
-      color: white;
-      font-family: "Ubuntu", sans-serif; }
-    .compra-res .compra_cantidad-res {
-      color: white;
-      font-family: "Ubuntu", sans-serif; }
-    .compra-res .compra_tomo-res {
-      color: white;
-      font-family: "Ubuntu", sans-serif; }
-    .compra-res .compra_form1-res input {
-      border: #00fdf1 2px solid; }
-    .compra-res .compra_form2-res input {
-      border: #51ff00 2px solid; }
-    .compra-res .compra_form3-res {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-    .compra-res .compra_boton-res {
-      cursor: pointer;
-      background-color: #5252ff;
-      font-family: "Ubuntu", sans-serif;
-      font-size: 22px;
-      height: 80px;
-      width: 280px; } }
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 
 /*Mangas De interes Desktop*/
 .mangas_title {
@@ -442,18 +252,13 @@ body {
   color: orange;
   transition: 0.2s; }
 
-<<<<<<< HEAD
 .mangas_deinteres {
-=======
-.mangas .mangas_deinteres {
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
   margin-top: 20px;
   height: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start; }
-<<<<<<< HEAD
 
 .mangas_deinteres img {
   height: 200px;
@@ -475,25 +280,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-=======
-  .mangas .mangas_deinteres a img {
-    height: 200px;
-    width: 250px;
-    opacity: 0.7;
-    transition: 0.5s; }
-    .mangas .mangas_deinteres a img:hover {
-      opacity: 1;
-      height: 205px;
-      width: 255px; }
-  .mangas .mangas_deinteres label {
-    margin-top: 240px;
-    color: white;
-    position: absolute; }
-  .mangas .mangas_deinteres a {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 
 .mangas_deinteres-res {
   display: none; }
@@ -503,11 +289,6 @@ body {
 
 /*Mangas de interes Responsive*/
 @media Screen and (max-width: 768px) {
-<<<<<<< HEAD
-=======
-  .mangas {
-    display: none; }
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
   .mangas_deinteres {
     display: none; }
   .mangas_title {
@@ -522,7 +303,6 @@ body {
     color: orange; }
   .mangas-res {
     display: block; }
-<<<<<<< HEAD
   .mangas_deinteres-res {
     display: flex;
     flex-direction: column;
@@ -580,61 +360,6 @@ body {
   color: black;
   display: inline-block;
   font-size: 18px; }
-=======
-    .mangas-res .mangas_deinteres-res {
-      display: flex;
-      flex-direction: column;
-      text-align: center; }
-      .mangas-res .mangas_deinteres-res img {
-        height: 50%;
-        width: 70%;
-        opacity: 0.5; }
-      .mangas-res .mangas_deinteres-res a label {
-        color: white;
-        cursor: pointer; }
-      .mangas-res .mangas_deinteres-res a {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center; } }
-
-/*Footer Desktop*/
-.footerdesktop {
-  position: absolute;
-  height: 50px;
-  width: 100%;
-  background-color: orangered;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5); }
-  .footerdesktop .discordicono {
-    position: absolute;
-    display: inline-block;
-    height: 50px;
-    width: 50px; }
-  .footerdesktop .discordfooter {
-    display: inline-block;
-    padding-left: 60px;
-    padding-top: 15px; }
-    .footerdesktop .discordfooter #discordname {
-      cursor: pointer;
-      color: black;
-      display: inline-block;
-      font-size: 18px; }
-  .footerdesktop .contactanosicono {
-    margin-left: 100px;
-    position: absolute;
-    display: inline-block;
-    height: 50px;
-    width: 50px; }
-  .footerdesktop .contactfooter {
-    display: inline-block;
-    padding-left: 165px;
-    padding-top: 15px; }
-    .footerdesktop .contactfooter #contactanosname {
-      cursor: pointer;
-      color: black;
-      display: inline-block;
-      font-size: 18px; }
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
 
 .footer_responsive {
   display: none; }
@@ -649,17 +374,10 @@ body {
     flex-direction: row;
     background-color: orangered;
     height: 40px;
-<<<<<<< HEAD
     width: 100%; }
   .discordicono-res {
     height: 40px;
     width: 40px; }
-=======
-    width: 102%; }
-    .footer_responsive .discordicono-res {
-      height: 40px;
-      width: 40px; }
->>>>>>> 5102c7b4c9efd5ed1d2f734ac5c2af8cf5212188
   #discordname-res {
     color: black;
     font-size: 16px;
