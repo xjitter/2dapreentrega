@@ -1,0 +1,217 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(29, 28, 28);
+    @include sizes(98%, 100%);
+}
+
+
+/*Nav desktop*/
+
+.nav {
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+    background-color: $coolboxbgcolor;
+    border: 3px $coolboxborder solid;
+    @include sizes(100%, 60px);
+}
+
+.nav_icon {
+    position: absolute;
+    display: inline-block;
+    @include sizes(40px, 53px);
+    margin-left: 10px;
+}
+
+.nav img {
+    margin-top: 5px;
+}
+
+.nav_name {
+    display: inline-block;
+    font-family: $fontubuntu;
+    font-size: 35px;
+    color: $coolboxborder;
+    margin-top: 10px;
+    margin-left: 65px;
+}
+
+.nav_login {
+    float: right;
+    margin-top: 0;
+    margin-right: 0%;
+    @include sizes(150px, 57px);
+    color: black;
+    background-color: $coolboxbgcolor;
+    border: $coolboxborder 2px solid;
+    border-right: 0px $coolboxborder solid;
+    transition: 0.7s;
+}
+
+.nav_login:hover{
+    background-color: rgb(247, 96, 41);
+}
+
+.nav_register {
+    float: right;
+    margin-top: 0;
+    margin-right: 0%;
+    @include sizes(150px, 57px);
+    color: black;
+    background-color: $coolboxbgcolor;
+    border: $coolboxborder 2px solid;
+    border-left: 3px $coolboxborder solid;
+    border-right: 2px $coolboxborder solid;
+    transition: 0.7s;
+}
+
+.nav_register:hover {
+    background-color: rgb(247, 96, 41);
+}
+
+.nav_register div {
+    padding-top: 20px;
+    padding-left: 35px;
+}
+
+.nav_login div {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.nav_responsive {
+    display: none;
+}
+/*Nav responsive*/
+    @media Screen and (max-width: 768px) {
+        .nav {
+            display: none;
+        }
+        .nav_responsive {
+            display: block;
+            position:fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+            background-color: $coolboxbgcolor;
+            border: 3px $coolboxborder solid;
+            @include sizes(100.5%, 40px);
+        }
+        .nav_responsive_icon {
+            @include sizes(30px, 40px);
+        }
+        .nav_responsive_name {
+            position: absolute;
+            font-family: $fontubuntu;
+            color: $coolboxborder;
+            margin-top: 10px;
+            margin-left: 10px;
+            animation-duration: 2s;
+            animation-name: entraresponsive;
+            animation-iteration-count: initial;
+        }
+    
+        @keyframes entraresponsive {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                color: rgb(134, 20, 0);
+            }
+            75% {
+                color: $coolboxborder;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        .signupandlogin {
+            display: flex;
+            flex-direction: column;
+            float: right;
+            height: 40px;
+            background-color: $coolboxbgcolor;
+            border-left: 3px $coolboxborder solid;
+        }
+        .nav_responsive_login{
+            font-size: medium;
+            color: black;
+            border-bottom: 3px $coolboxborder solid;
+        }
+        .nav_responsive_register {
+            font-size: medium;
+            color: black;
+            margin-left: 4px;
+        }
+}
+
+h1 {
+    font-family: $fontsilk;
+    color: $textoresaltado;
+    text-align: center;
+    margin-top: 200px;
+}
+
+h3 {
+    font-family: $fontsilk;
+    color: $textoresaltado;
+    text-align: center;
+}
+
+.consulta {
+    margin-top: -220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form {
+    z-index:20;
+    color: rgb(66, 0, 0);
+}
+
+#consulta_text {
+    resize: none;
+    margin-top: 250px;
+    @include sizes(500px, 150px);
+}
+
+#consulta_enviar {
+    cursor: pointer;
+    margin-left: 220px;
+    color: $textodeguia;
+    background-color: black;
+}
+.consulta_responsive {
+    display: none;
+}
+#consulta_enviar-res {
+    display: none;
+}
+@media screen and (max-width:768px){
+    #consulta_text {
+        @include sizes(250px, 70px);
+    }
+    #consulta_enviar {
+        display: none;
+    }
+    #consulta_enviar-res {
+        display: flex;
+        margin-left: 100px;
+        position: absolute;
+        cursor: pointer;
+        color: $textodeguia;
+        background-color: black;
+    }
+}
